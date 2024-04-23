@@ -45,6 +45,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:29.7.0"],\
           ["jest-environment-jsdom", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:29.7.0"],\
           ["next", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:14.2.2"],\
+          ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:18.2.0"],\
           ["ts-node", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:10.9.2"],\
@@ -7370,6 +7371,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["prettier", [\
+      ["npm:3.2.5", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.2.5-6859110d6a/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.2.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["pretty-format", [\
       ["npm:27.5.1", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/pretty-format-npm-27.5.1-cd7d49696f-10c0.zip/node_modules/pretty-format/",\
@@ -7752,6 +7762,7 @@ const RAW_RUNTIME_STATE =
           ["jest", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:29.7.0"],\
           ["jest-environment-jsdom", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:29.7.0"],\
           ["next", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:14.2.2"],\
+          ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:18.2.0"],\
           ["ts-node", "virtual:d056b4649c5c9626de8e780dee10efab3b5ca10b7dcf5fee15dc5a96b52d7a61548685e9b63b8d1e53a55ebde4076811e2783a88cb070f118bd5fb92b77487e4#npm:10.9.2"],\
