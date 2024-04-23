@@ -1,9 +1,8 @@
 "use client";
 
 import { Button } from "@mui/material";
-//import Link from "next/link";
-
 import { useEffect } from "react";
+import styles from "./styles.module.css";
 
 export default function Error({
   error,
@@ -19,9 +18,15 @@ export default function Error({
   return (
     <div>
       <h2>Error loading user!</h2>
-      <Button variant="contained" onClick={() => reset()}>
-        Try again
-      </Button>
+      <div className={styles.buttonWrapper}>
+        <Button
+          className={styles.button}
+          variant="contained"
+          onClick={() => reset()}
+        >
+          Try again
+        </Button>
+      </div>
     </div>
   );
 }

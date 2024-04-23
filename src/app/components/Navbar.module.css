@@ -1,0 +1,17 @@
+.navbar {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.link {
+  padding: 0.25em 1em;
+}
+
+.nonFinalLink {
+  margin-right: 0.5em;
+}
+
+.activeLink {
+  border-radius: 99999px;
+  background-color: darkblue;
+}

@@ -6,7 +6,8 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Link from "next/link";
+import styles from "./layout.module.css";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,11 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${styles.layout}`}>
         <AppRouterCacheProvider>
           <nav>
-            <Link href="/">Home</Link>
-            <Link href="/user">User</Link>
+            <Navbar />
           </nav>
           {children}
         </AppRouterCacheProvider>
