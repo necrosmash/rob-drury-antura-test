@@ -1,12 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button } from "@mui/material";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      test
-      <Button variant="contained">Contained</Button>
+      <Link href="/user">Load user</Link>
     </main>
   );
 }

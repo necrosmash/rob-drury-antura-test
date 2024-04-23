@@ -1,8 +1,9 @@
 import User from "@/app/components/User";
-import { UserProps } from "@/types";
+import { FetchedUser } from "@/types";
 
 async function getData() {
-  const res = await fetch("https://randomuser.me/api/");
+  // "no-store" for server-rendering on-demand:
+  const res = await fetch("https://randomuser.me/api/", { cache: "no-store" });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -13,10 +14,13 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
-  const user: UserProps = {
+  const user: FetchedUser = {
     gender: data.results[0].gender,
     title: data.results[0].name.title,
+    nameFirst: data.results[0].name.first,
+    nameLast: data.results[0].name.last,
   };
 
+  console.log(user.nameFirst);
   return <User user={user}></User>;
 }
