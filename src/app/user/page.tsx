@@ -3,7 +3,9 @@ import { FetchedUser } from "@/types";
 
 async function getData() {
   // "no-store" for server-rendering on-demand:
-  const res = await fetch("https://randomuser.me/api/", { cache: "no-store" });
+  const res = await fetch(process.env.NEXT_PUBLIC_API_URL!, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
