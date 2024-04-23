@@ -1,5 +1,10 @@
 import { CircularProgress } from "@mui/material";
+import styles from "./styles.module.css";
 
 export default function Loading() {
-  return <CircularProgress />;
+  return (
+    <div className={styles.loadingContainer}>
+      <CircularProgress />
+    </div>
+  );
 }

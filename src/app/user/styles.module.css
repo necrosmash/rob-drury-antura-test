@@ -6,3 +6,9 @@
 .buttonWrapper {
   padding-top: 1em;
 }
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
