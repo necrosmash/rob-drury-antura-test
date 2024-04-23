@@ -3,4 +3,8 @@ export interface FetchedUser {
   title: string;
   nameFirst: string;
   nameLast: string;
+  avatar: string;
+  address: string[];
+  dob: Date;
+  username: string;
 }

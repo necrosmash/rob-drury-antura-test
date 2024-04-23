@@ -1,5 +1,6 @@
-import User from "@/app/components/User";
+import UserCard from "@/app/components/UserCard";
 import { FetchedUser } from "@/types";
+import styles from "./styles.module.css";
 
 async function getData() {
   // "no-store" for server-rendering on-demand:
@@ -16,13 +17,27 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
+  const resUser = data.results[0];
   const user: FetchedUser = {
-    gender: data.results[0].gender,
-    title: data.results[0].name.title,
-    nameFirst: data.results[0].name.first,
-    nameLast: data.results[0].name.last,
+    gender: resUser.gender,
+    title: resUser.name.title,
+    nameFirst: resUser.name.first,
+    nameLast: resUser.name.last,
+    avatar: resUser.picture.large,
+    address: [
+      resUser.location.street.number + " " + resUser.location.street.name,
+      resUser.location.city,
+      resUser.location.state,
+      resUser.location.country,
+      resUser.location.postcode,
+    ],
+    dob: new Date(resUser.dob.date),
+    username: resUser.login.username,
   };
 
-  console.log(user.nameFirst);
-  return <User user={user}></User>;
+  return (
+    <div className={styles.userPage}>
+      <UserCard user={user}></UserCard>
+    </div>
+  );
 }
